@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.chat-container{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 9px 25px #0b2a5b;
+    overflow: hidden;
+    border: 1px solid #0b2a5b;
+    background: #0d3575;
+
+}
+
+.chat-header{
+    min-height: 50px;
+    overflow: hidden;
+    background: #0b2a5b;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #051b3f;
+
+}
+
+.chat-header .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: rgb(81, 184, 243);
+
+ 
+}
+
+
+.logo h3 {
+    letter-spacing: 20px;
+    margin-left: 10px;
+
+}
+
+.chat-header p{
+    margin-right: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+
+
+.chat-section{
+    pad: 20px;
+}
+
+.main-wrapper{
+    width: 100%;
+    height: 500px;
+}
+
+.chat-content{
+    width: 100%;
+    height: 450px;
+    background: white;
+    overflow-y: auto;
+    box-shadow: inset 0 0 1px #111;
+    padding: 0 10px;
+    border-radius: 3px;
+    scrollbar-width: none;
+
+}
+
+.chat-content .message{
+    width: 100%;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+.message-row{
+    display: grid;
+    grid-template-columns: 70%;
+    margin-bottom: 10px;
+}
+
+.your-message{
+    justify-content: end;
+    justify-items: end;
+}
+
+
+.other-message{
+    justify-content: start;
+    justify-items: start;
+}
+
+.message-text{
+    padding: 9px 14px;
+    margin-bottom: 5px;
+}
+
+.message-time{
+    font-size: 13px;
+    color:#777;
+}
+
+
+.your-message .message-text{
+    background:#0048AA ;
+    color: white;
+    border: 1px solid #0048AA;
+    border-radius: 14px 14px 0 14px;
+}
+
+
+.other-message .message-text{
+    background:#eee ;
+    color: #111;
+    border: 1px solid #ddd;
+    border-radius: 14px 14px 14px 0;
+}
+
+
+.message-title span{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.msg-tex{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.msg-tex input,
+.msg-tex button{
+    flex: 4;
+    height: 40px;
+    outline: none;
+    border: 1px sokid #888;
+    padding: 0 10px;
+    border-radius: 3px;
+
+
+}
+
+.msg-tex button{
+    flex: 1;
+    max-width: 120px;
+    cursor: pointer;
+    color:rgb(81, 184, 243)
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
